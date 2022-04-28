@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --background: #16161a;
+    --titles: #fffffe;
+    --paragraphs: #94a1b2;
+    --buttons: #7f5af0;
+}
+
+body{
+    min-height: 100vh;
+    background-color: var(--background);
+}
+
+p{
+    color: var(--paragraphs);
+}
+
+h1, i{
+    color: var(--titles);
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
