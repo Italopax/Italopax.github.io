@@ -11,17 +11,27 @@
     --buttons: #7f5af0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body{
     min-height: 100vh;
     background-color: var(--background);
+    padding: 1rem 0;
 }
 
 p{
     color: var(--paragraphs);
+    text-align: justify;
 }
 
 h1, i{
-    color: var(--titles);
+    font-size: 1.75rem; 
+}
+
+h1, h2, i{
+    color: var(--titles); 
 }
 
 ul{
@@ -32,7 +42,33 @@ a{
     text-decoration: none;
 }
 
+.flex{
+    display: flex;
+    flex-direction: column;
+}
+
 .container{
     width: 80%;
     margin: auto;
+    gap: 2rem;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+main{
+    gap: 1rem;
+}
+
+section{
+    gap: .5rem;
+}
+
+@media (min-width: 500px){
+
+
+
 }
