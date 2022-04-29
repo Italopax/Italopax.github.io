@@ -95,7 +95,8 @@ nav{
 
 .normal{
     display: flex;
-    max-width: 50%;
+/*     max-width: 50%; */
+    align-items: center;
     font-size: 1rem;
 }
 
@@ -140,5 +141,17 @@ footer{
     footer a i:hover{
         color: var(--buttons);
     }
+
+    header{
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .normal ul{
+        display: flex;
+        flex-wrap: nowrap;
+        gap: .5rem; 
+    }   
 
 }
