@@ -56,8 +56,62 @@ a{
 header{
     display: flex;
     justify-content: space-between;
-    gap: 1rem;
+    gap: 2rem;
 }
+
+nav{
+    display: none;
+}
+
+
+
+.box{
+    display: flex;
+    position: fixed;
+    top: 15vh;
+    right: 10vw;
+    height: 70vh;
+    width: 80vw;
+    background-color: rgba(226, 226, 226, 0.831);
+    justify-content: center;
+    align-items: center;
+}
+
+.box a{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--background);
+    padding: .5rem 1rem;
+    background-color: var(--buttons); 
+    border-radius: 10px;
+}
+
+.box ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+
+.normal{
+    display: flex;
+    max-width: 50%;
+    font-size: 1rem;
+}
+
+.normal ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem; 
+}
+
+.normal a{
+    color: var(--background);
+    padding: .25rem .5rem;
+    background-color: var(--buttons); 
+    border-radius: 10px;
+}
+
 
 main{
     gap: 1rem;
@@ -67,8 +121,10 @@ section{
     gap: .5rem;
 }
 
-@media (min-width: 500px){
+@media (min-width: 600px){
 
-
+    .fa-solid{
+        display: none !important;
+    }
 
 }
